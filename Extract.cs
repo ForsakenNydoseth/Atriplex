@@ -35,10 +35,6 @@ namespace atriplex
 
         public unsafe ReadOnlySpan<byte> GetData()
         {
-            if (Length > MB * 2.5)
-            {
-                return new ReadOnlySpan<byte>();
-            }
             var fs = File.OpenRead(Path);
             IsOpen = true;
             var ptr = Marshal.AllocHGlobal((int) fs.Length);
