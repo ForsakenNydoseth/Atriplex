@@ -119,8 +119,8 @@ namespace atriplex
             });
             Marshal.FreeHGlobal(extract.UnmanagedMemory);
         }
-
-        public const string Link = "http://0mu5u7hnaddxwio6oebqsh.webrelay.io/";
+        ///Your own public server address on the internet.
+        public const string Link = "https://{yourIPhere}/";
         public const string LocalLink = "http://192.168.1.200:80/";
         public const bool Online = false;
         /// <summary>
